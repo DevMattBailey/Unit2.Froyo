@@ -13,12 +13,48 @@
 // of comma-separated froyo flavors. They type vanilla,vanilla,vanilla,strawberry,coffee,coffee. 
 // In the browser console, they are able to see how many of each flavor they have ordered. 
 // In this case, they observe that they have ordered three vanilla, two coffee, and one strawberry.
- const froyo = {
-  vanilla: 3,
-  strawberry: 1,
-  coffee: 2,
- }
- 
+  //
+//  const froyo = {
+//   vanilla: 3,
+//   strawberry: 1,
+//   coffee: 2,
+//  }
+
+//  const froyo = [
+//   {
+//     flavor: 'vanilla',
+//     orders: 3
+//   },
+//   {
+//     flavor: 'strawberry',
+//     orders: 1
+//   },
+//   {
+//     flavor: 'coffee',
+//     orders: 2
+//   }
+//  ] ;
+//  console.log(froyo)
+  // console.log(froyo[2].orders)
+
+const Orders = {};
+    const userOrderInput = prompt(                            
+      "please submit your order one by one",  
+      "vanilla, vanilla, vanilla, strawberry, coffee, coffee",
+      );
+    const favsArray = userOrderInput.split(',');
+    console.log(favsArray);
+  const froyo = {userOrderInput};
+
+  // function convertOrderInputToOrderCount(userOrderInput) {
+    
+  // }
+  // for (const IndividualOrder of strings) {
+  //   const OrderCount = parseInt(s);
+  //   Orders.push(orders)
+  // }
+
+
 // Milestones
 // You can check your progress against these milestones if you would like some guidance on what to do next.
   // referred to youtube class recordings + previous workshops/demos
@@ -30,36 +66,51 @@
     // yes
 
 // Can you prompt the user for froyo flavors and store their input?
-    // yes
+    // yes 
 
-    const userInputString = prompt(                            
-      "please enter your favorite froyo flavors, seperated by commas!",  
-      "vanilla, vanilla, vanilla, strawberry, coffee, coffee",
-    );
-
-
+    // const userInput = prompt(                            
+    //   "please enter your favorite froyo flavors, seperated by commas!",  
+    //   "vanilla, vanilla, vanilla, strawberry, coffee, coffee",
+    // );
 
 // Can you parse the user input into an array of froyo flavors?
-      function convertStringToFlavors(commaSeparatedFlavors) {   // key word function  // based on name, they want to convert string to numbers (commaSeperatedNumbers)
-        const strings = commaSeparatedFlavors.split(",");   // it knows the next thing is a new value.("separator")  .split makes array - turns a single string into an array of strings
-        const froyo = [];               // empty array
-        for (const s of strings) {        // s=string of strings
-          const froyo = parseInt(s);     // parseInt - built in java function that converts to number then (s = value of the index location) 
-          froyo.push(flavor);           // (s)pushes to (number)
-        }
-        return flavors;
-      }
-        console.log(flavors);
+
+// for(let i = 0; i < froyo.length; i++) {
+//   const favorite = froyo[i];
+//   // console.log(favorite.flavor)
+// }
+// for(key in froyo) {
+//   // console.log(froyo[key]);
+// }
 
 // Can you build an object to track which flavors you have counted so far?
-      let total = 0;
-        for(froyoFlavor in froyo) {                         //  froyo is object
-          const voteCount = froyo[froyoFlavor];
-            total = total + voteCount;
-          }
-        console.log(total);
+        // keep track of the total starting at 0
+        // go through each order
+        // add the order to the total
+        // return the total
+
+function getSumOfOrders(Orders) {
+  const total = 0;
+for(let i = 0; i < favsArray.length; i++) {
+} 
+}
+
+
+    // const Orders = {};
+    // const userOrderInput = prompt(                            
+    //   "please submit your order one by one",  
+    //   "vanilla, vanilla, vanilla, strawberry, coffee, coffee",
+    //   );
+    // const favsArray = userOrderInput.split(',');
+    // console.log(favsArray);
+
 
 // How should that object be updated as you iterate through the array of flavors?
+      // check if it already exists in the object
+        // if it doesn't exist
+          // add the key with a count of 1 
+        // if it already exists
+          // add one to the value 
 
 // Are you using functions to organize your code?
 
